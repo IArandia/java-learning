@@ -18,7 +18,7 @@ public class ReadyBake{
 
         Boolean artistasCanciones = songsList.stream()
                                             .collect(Collectors.groupingBy(
-                                                p -> p.getArtist(),
+                                                p -> p.getTitle(),
                                                 Collectors.counting()
                                             ))
                                             .values()
